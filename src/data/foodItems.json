@@ -4,69 +4,69 @@
     "name": "Dosa",
     "description": "A crispy and savory South Indian pancake made with fermented rice and lentil batter.",
     "price": 50,
-    "photo": "https://example.com/photos/dosa.jpg"
+    "image": "https://example.com/photos/dosa.jpg"
   },
   {
     "id": 2,
     "name": "Idli",
     "description": "A soft and fluffy South Indian steamed rice cake made with fermented rice and lentil batter.",
     "price": 40,
-    "photo": "https://example.com/photos/idli.jpg"
+    "image": "https://example.com/photos/idli.jpg"
   },
   {
     "id": 3,
     "name": "Vada",
     "description": "A deep-fried South Indian savory doughnut made with lentil batter and spices.",
     "price": 30,
-    "photo": "https://example.com/photos/vada.jpg"
+    "image": "https://example.com/photos/vada.jpg"
   },
   {
     "id": 4,
     "name": "Pongal",
     "description": "A hearty and comforting South Indian rice and lentil porridge made with cumin, pepper, and ghee.",
     "price": 60,
-    "photo": "https://example.com/photos/pongal.jpg"
+    "image": "https://example.com/photos/pongal.jpg"
   },
   {
     "id": 5,
     "name": "Sambar",
     "description": "A tangy and spicy South Indian lentil soup made with vegetables and tamarind.",
     "price": 60,
-    "photo": "https://example.com/photos/sambar.jpg"
+    "image": "https://example.com/photos/sambar.jpg"
   },
   {
     "id": 6,
     "name": "Rasam",
     "description": "A tangy and spicy South Indian soup made with tomatoes, tamarind, and spices.",
     "price": 50,
-    "photo": "https://example.com/photos/rasam.jpg"
+    "image": "https://example.com/photos/rasam.jpg"
   },
   {
     "id": 7,
     "name": "Avial",
     "description": "A flavorful and colorful South Indian vegetable stew made with coconut and yogurt.",
     "price": 80,
-    "photo": "https://example.com/photos/avial.jpg"
+    "image": "https://example.com/photos/avial.jpg"
   },
   {
     "id": 8,
     "name": "Thalapakattu Biryani",
     "description": "A spicy and aromatic South Indian rice dish made with basmati rice, meat, and spices.",
     "price": 200,
-    "photo": "https://example.com/photos/thalapakattu_biryani.jpg"
+    "image": "https://example.com/photos/thalapakattu_biryani.jpg"
   },
   {
     "id": 9,
     "name": "Kuzhi Paniyaram",
     "description": "A soft and fluffy South Indian dumpling made with fermented rice and lentil batter.",
     "price": 70,
-    "photo": "https://example.com/photos/kuzhi_paniyaram.jpg"
+    "image": "https://example.com/photos/kuzhi_paniyaram.jpg"
   },
   {
     "id": 10,
     "name": "Parotta",
     "description": "A flaky and layered South Indian flatbread made with all-purpose flour and ghee.",
     "price": 30,
-    "photo": "https://example.com/photos/parotta.jpg"
+    "image": "https://example.com/photos/parotta.jpg"
   }
 ]
