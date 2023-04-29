@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { RootLayout, Error } from "./pages";
+import { RootLayout, Menu, Queue, Error } from "./pages";
 
 function App() {
   const router = createBrowserRouter([
@@ -7,7 +7,10 @@ function App() {
       path: "/",
       element: <RootLayout />,
       errorElement: <Error />,
-      children: [],
+      children: [
+        { index: true, element: <Menu /> },
+        { path: "queue", element: <Queue /> },
+      ],
     },
   ]);
 
