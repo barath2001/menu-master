@@ -1,16 +1,29 @@
 .container {
-  background-color: lightgrey;
-}
-
-.img {
-  height: 5rem;
-  background-color: lightgreen;
-}
-
-.details {
+  background-color: var(--accent-bg-color);
   padding: 1rem;
+  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.primary-btn {
+  background-color: var(--accent-color);
+}
+
+.secondary-btn {
+  border: 1px solid var(--accent-color);
 }

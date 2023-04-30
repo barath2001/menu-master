@@ -4,18 +4,41 @@
   padding: 0;
 }
 
+:root {
+  --accent-color: #ff922b;
+  --accent-bg-color: #fff4e6;
+
+  --text-color: #333333;
+
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #e9ecef;
+}
+
 body {
   font-family: sans-serif;
+  color: var(--text-color);
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: inherit;
+}
+
+input,
+textarea {
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 button {
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 0.25rem;
   padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  border: none;
+  background-color: var(--primary-bg-color);
+  cursor: pointer;
 }
