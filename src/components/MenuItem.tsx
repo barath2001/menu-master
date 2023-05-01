@@ -6,9 +6,16 @@ type MenuItemProps = {
   description: string;
   price: number;
   image: string;
+  onAddToCart: () => void;
 };
 
-export function MenuItem({ name, description, price, image }: MenuItemProps) {
+export function MenuItem({
+  name,
+  description,
+  price,
+  image,
+  onAddToCart,
+}: MenuItemProps) {
   return (
     <div className={styles.container}>
       <div className={styles.info}>
@@ -18,7 +25,9 @@ export function MenuItem({ name, description, price, image }: MenuItemProps) {
         </span>
       </div>
       <div className={styles.actions}>
-        <button className={styles["primary-btn"]}>Add</button>
+        <button className={styles["primary-btn"]} onClick={onAddToCart}>
+          Add
+        </button>
         <button className={styles["secondary-btn"]}>More info</button>
       </div>
     </div>
