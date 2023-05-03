@@ -1,0 +1,37 @@
+.container {
+  background-color: var(--secondary-bg-color);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.qty-btn {
+  height: 1.5rem;
+  width: 1.5rem;
+  border: none;
+  background-color: var(--primary-bg-color);
+  border: 1px solid var(--text-color);
+  border-radius: 0.25rem;
+  font-size: 1.2rem;
+}
+
+.delete-btn {
+  margin-left: 1rem;
+  background-color: transparent;
+  border: none;
+}
+
+.delete-btn img {
+  width: 1.25rem;
+}

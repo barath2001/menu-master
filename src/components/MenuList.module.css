@@ -1,9 +1,13 @@
 .container {
-  width: 80%;
+  flex-grow: 1;
+  padding: 2rem;
 
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 1rem;
+  align-content: start;
+
+  overflow-y: auto;
 }
 
 @media screen and (max-width: 1600px) {

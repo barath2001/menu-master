@@ -2,9 +2,6 @@
   background-color: var(--accent-bg-color);
   padding: 1rem;
   border-radius: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .info {
@@ -20,10 +17,17 @@
   align-items: center;
 }
 
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  border: none;
+}
+
 .primary-btn {
   background-color: var(--accent-color);
 }
 
 .secondary-btn {
+  background-color: var(--primary-bg-color);
   border: 1px solid var(--accent-color);
 }

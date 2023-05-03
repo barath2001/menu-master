@@ -20,15 +20,18 @@ export function MenuItem({
     <div className={styles.container}>
       <div className={styles.info}>
         <h4>{name}</h4>
-        <span>
-          <p>{currencyFormatter.format(price)}</p>
-        </span>
+        <span>{currencyFormatter.format(price)}</span>
       </div>
       <div className={styles.actions}>
-        <button className={styles["primary-btn"]} onClick={onAddToCart}>
+        <button
+          className={`${styles["primary-btn"]} ${styles.btn}`}
+          onClick={onAddToCart}
+        >
           Add
         </button>
-        <button className={styles["secondary-btn"]}>More info</button>
+        <button className={`${styles["secondary-btn"]} ${styles.btn}`}>
+          More info
+        </button>
       </div>
     </div>
   );

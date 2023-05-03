@@ -1,7 +1,6 @@
 import foodItems from "../data/foodItems.json";
 import { MenuItem } from "./MenuItem";
 import styles from "./MenuList.module.css";
-import { FoodItem } from "../data/type";
 
 import { useDispatch } from "react-redux";
 import { addItemToCart } from "../store/cart-slice";
@@ -9,7 +8,7 @@ import { addItemToCart } from "../store/cart-slice";
 export function MenuList() {
   const dispatch = useDispatch();
 
-  function addToCartHandler(item: FoodItem) {
+  function addToCartHandler(item: { id: string; name: string; price: number }) {
     dispatch(addItemToCart(item));
   }
 
@@ -22,7 +21,11 @@ export function MenuList() {
           description={item.description}
           price={item.price}
           image={item.image}
-          onAddToCart={addToCartHandler.bind(null, item)}
+          onAddToCart={addToCartHandler.bind(null, {
+            id: item.id,
+            name: item.name,
+            price: item.price,
+          })}
         />
       ))}
     </div>

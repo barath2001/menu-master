@@ -1,8 +1,15 @@
 import { Link, NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import logo from "../images/logo.png";
+import cartIcon from "../images/cart-icon.png";
+import { useSelector } from "react-redux";
+import { RootState } from "../store";
 
 export function Navbar() {
+  const cartTotalQuantity = useSelector(
+    (state: RootState) => state.cart.totalQuantity
+  );
+
   const navLinkClassName = ({ isActive }: { isActive: boolean }) =>
     isActive
       ? styles["nav-link-active"] + " " + styles["nav-link"]
@@ -27,6 +34,10 @@ export function Navbar() {
             </NavLink>
           </li>
         </ul>
+        <button className={styles["cart-btn"]}>
+          <img src={cartIcon} className={styles["cart-icon"]} />
+          <div className={styles["cart-number"]}>{cartTotalQuantity}</div>
+        </button>
       </nav>
     </header>
   );
